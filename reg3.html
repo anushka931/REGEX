@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg3</title>
+
+    <style>
+        
+        h1{
+            
+            color:yellow;
+            background-color: black;
+            border: 2px dashed;
+            border-color: rgb(90, 90, 31);
+            text-align:center;
+            text-transform: capitalize;
+            text-decoration-color: brown;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin:auto;
+            padding: 10px;
+            
+
+        }
+
+        p{
+            
+            color:white;
+            background-color:black;
+            word-spacing: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: justify;
+            margin:auto;
+            padding:10px;
+ 
+        }
+
+
+
+    </style>
+
+    
+</head>
+
+<body>
+    <!-- table  -->
+    <!-- rowspan and colspan  -->
+    <table border="">
+        <tr>
+            <th>ID</th>
+            <th>Name </th>
+            <th >Email</th>
+            <th>Psw</th>
+        </tr>
+
+        <tr>
+            <td>001</td>
+            <td >Anushka</td>
+            <td>Anushka@123</td>
+            <td>54321</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Anu</td>
+            <td>anu@23</td>
+            <td>123</td>
+         
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>abc</td>
+            <td>abc@123</td>
+            <td>7762</td>
+        </tr>
+    </table>
+<br><br> 
+
+<!-- form  -->
+       <!--  <METHOD :  --get(short data) and --post(important and long data)(secure) -->
+        <!-- ACTION:  url of the database where the data will be stored -->
+        <!-- name attribute: used at backend to storethe data at exact location and row
+            ie email= request.post name=email;
+        --> 
+       <form action="" method="get">
+        <label for="" style="color:red">Name:</label>
+
+        <input type="text" autofocus> <br>
+        Email: <input type="email" placeholder="abc@gmail.com" required disabled> <br> 
+          <!-- for is used to bound or to relate label and input tag using id attribute -->
+        <label for="name" style="color:brown">Password:</label>
+         <input type="password" name="password" id="name" id="" >  <br>
+        Gender: <input type="radio" name="m"> Male
+                <input type="radio" name="m"> Female <br>
+        Language: <input type="checkbox"> Hindi
+                  <input type="checkbox"> English
+                  <input type="checkbox"> M arwadi <br>
+        Date: <input type="date">  <br>
+        Time: <input type="time"> <br>
+        Color: <input type="color"> <br>
+        File: <input type ="File"> <br>
+        Range: <input type="range"> <br>
+        Number: <input type="number"> <br>
+        City: <select name="" id="">
+            <option value="">None</option>
+            <option value="">Jaipur</option>
+            <option value="">Jodhpur</option>
+             <option value="">gopalpura</option>
+             <option value="">mansarobar</option>
+        </select> <br>
+        <br>
+        
+        <textarea name="" id="" cols="30" rows="10" placeholder="enter the feedback:"> enter </textarea>
+       <br> <button>Submit</button> <br>
+
+       <br>
+       <div>
+        <h1>My name is  <span style="color:blueviolet">Anushka</span> Kaushik</h1>
+
+       HTML: <progress id="file" max="100" value="80"></progress> <br>
+       CSS: <progress id="file" max="100" value="30"></progress> <br>
+       JS: <progress id="file" max="100" value="10"></progress> <br>
+
+       </div>
+
+       </form>  
+
+       <br>
+       <address>VT road , Mansarobar</address> 
+
+
+
+
+
+
+       <!-- CSS  -->
+       
+       <h1 class="h1"> This is first Heading </h1> 
+
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae optio assumenda ipsa minus eum. Quam cumque asperiores non dolor! Odio, architecto deserunt? Temporibus aliquam autem, error enim quis voluptate earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo repellendus laboriosam nam voluptatibus culpa quam consectetur doloremque labore eligendi velit fuga placeat nobis aliquid tenetur id nisi, magni Lorem ipsum dolor sit amet consectetur adipisicing elit. In, suscipit consequatur hic veritatis esse voluptas numquam, maxime facere est voluptatibus iusto non odit corrupti! Non minima sequi architecto officiis esse?</p>
+    
+
+       <h1>this is second heading</h1> 
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti dolorum ullam aliquid consequatur vitae culpa vero sint dolore nisi totam! Non rem quasi aliquam reprehenderit, aspernatur delectus sint tempore maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia soluta beatae cum, quas magni nemo dolores qui? Corrupti iure, officia, et debitis reiciendis sunt, sed similique cupiditate aspernatur magni molestiae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, deleniti eligendi eveniet atque unde perferendis minima autem nam, illo quod dolor voluptas harum, sequi assumenda maiores quam magnam voluptate ratione!</p>
+
+       <h1>this is third heading</h1> 
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti dolorum ullam aliquid consequatur vitae culpa vero sint dolore nisi totam! Non rem quasi aliquam reprehenderit, aspernatur delectus sint tempore maiores? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia soluta beatae cum, quas magni nemo dolores qui? Corrupti iure, officia, et debitis reiciendis sunt, sed similique cupiditate aspernatur magni molestiae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, deleniti eligendi eveniet atque unde perferendis minima autem nam, illo quod dolor voluptas harum, sequi assumenda maiores quam magnam voluptate ratione!</p>
+
+       
+    
+</body>
+</html>
