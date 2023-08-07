@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displaygrid
+
+    </title>
+
+    <style>
+        .container{
+            height:100vw;
+            display: grid;
+            /* grid-template-columns: repeat(4,auto);*/
+            grid-gap: 2rem; 
+            /* grid-template-columns: 1fr 2fr 2fr;  */
+
+        }
+        .box{
+            height: 100%;
+            border: 2px solid blue;
+            background-color: pink;
+        }
+        #inner-box{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-gap: 1rem;
+        }
+        .inner{
+            border: 2px dashed red;
+          
+           background-color: antiquewhite;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box" id="inner-box">
+            <div class="inner"></div>
+            <div class="inner"></div>
+            <div class="inner"></div>
+        </div>
+        <div class="box"></div>
+        <!-- <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>  
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> -->
+    </div>
+    
+</body>
+</html>

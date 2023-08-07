@@ -34,10 +34,11 @@
             text-align: justify;
             margin:auto;
             padding:10px;
+            transform: rotateX('angle');
  
+        
         }
-
-
+      
 
     </style>
 
@@ -54,6 +55,7 @@
             <th >Email</th>
             <th>Psw</th>
         </tr>
+      
 
         <tr>
             <td>001</td>
@@ -74,6 +76,11 @@
             <td>abc@123</td>
             <td>7762</td>
         </tr>
+
+    <dl style="border:1px solid black">
+        <dt>description term</dt>
+        <dd>data description</dd>
+    </dl>
     </table>
 <br><br> 
 
@@ -87,7 +94,7 @@
         <label for="" style="color:red">Name:</label>
 
         <input type="text" autofocus> <br>
-        Email: <input type="email" placeholder="abc@gmail.com" required disabled> <br> 
+        Email: <input type="email" placeholder="abc@gmail.com "   required disabled> <br> 
           <!-- for is used to bound or to relate label and input tag using id attribute -->
         <label for="name" style="color:brown">Password:</label>
          <input type="password" name="password" id="name" id="" >  <br>
