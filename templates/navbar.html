@@ -143,18 +143,47 @@
       .menu {
         display: inline;
         display: none;
-        position: absolute;
+        position: relative;
+        top: 62px;
+        left: 0%;
+        color: blue;
       }
 
       .one {
-        position: absolute;
-        display: block;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
       }
 
       .one:hover .menu {
         display: block;
+        position:absolute;
+      }
+      .list{
+
+         display: none;
         position: absolute;
+        top: 40%;
+        text-align: center;
+        z-index: 1;
+        background-color:white;
+        width: 40%;
+        
+       
+      }
+      .b2{
+        position: absolute;
+        top: 20%;
+        display: flex;
+        align-items: center;
+
+        
+      }
+    
+      button{
+        margin: 2px;
       }
     </style>
   </head>
@@ -169,6 +198,19 @@
 
           <div class="inner" id="b2">
             <input type="search" name="" id="search" placeholder="search " />
+            <div class="list" id="list">
+              <h3>Popular Searches</h3>
+              <button>Saree</button>
+              <button>kurti</button>
+              <button>tshirt</button>
+              <button>watch</button>
+              <button>jeans</button>
+              <button>top</button>
+              <button>Smartwatches</button>
+              <button>Rakhi</button>
+        
+        
+            </div>
           </div>
 
           <div class="inner" id="b3">
@@ -211,14 +253,89 @@
               <li>View All</li>
             </ul>
           </div>
-          <div class="item">women western</div>
-          <div class="item">men</div>
-          <div class="item">kids</div>
-          <div class="item">home</div>
-          <div class="item">beauty</div>
-          <div class="item">jewellery</div>
-          <div class="item">footwear</div>
-          <div class="item" id="ele">electronics</div>
+          <div class="item one">women western
+            <ul class="menu" type="none">
+              <li>Topwear</li>
+              <li>Bottomwear</li>
+              <li>Sleepwear</li>
+              <li>Dresses</li>
+              <li>Sweaters</li>
+              
+            </ul>
+          </div>
+          <div class="item one">men
+            <ul class="menu" type="none">
+              <li>Tshirts</li>
+              <li>Shirts</li>
+              <li>Jeans </li>
+              <li>Trousers</li>
+              <li>Trackpants</li>
+              <li>Men Accessories</li>
+              <li>Men Footwear</li>
+              <li>Ethenic wear</li>
+            </ul>
+          </div>
+          <div class="item one">kids
+            <ul class="menu" type="none">
+              <li>Boys</li>
+              <li>Girls</li>
+              <li>Infant 0-2 years</li>
+              <li>Toys&Accessories</li>
+              <li>Baby Care</li>
+             
+            </ul>
+          </div>
+          <div class="item one">home
+            <ul class="menu" type="none">
+              <li>Home Furnishing</li>
+              <li> Home Decor</li>
+              <li>Kitchen & Dining</li>
+              <li>Showpieces</li>
+              
+            </ul>
+          </div>
+          <div class="item one">beauty
+            <ul class="menu" type="none">
+              <li>Make up</li>
+              <li>Wellness</li>
+              <li>Skincare</li>
+              
+            </ul>
+          </div>
+          <div class="item one">jewellery
+            <ul class="menu" type="none">
+              <li>Jewellery Set</li>
+              <li>earrings</li>
+              <li>Bangles</li>
+              <li>Necklaces</li>
+              <li>Rings</li>
+              <li>Anklets</li>
+              <li>Hair Accessories</li>
+              <li>Watches</li>
+              <li>Bags</li>
+            </ul>
+          </div>
+          <div class="item one">footwear
+            <ul class="menu" type="none">
+              <li> Women Footwear</li>
+              <li>Men Footwear</li>
+              <li>Casual Footwear</li>
+              <li> Formal Footwear</li>
+            
+              <li>View All</li>
+            </ul>
+          </div>
+          <div class="item one" id="ele">electronics
+            <ul class="menu" type="none">
+              <li>Mobile Accessories</li>
+              <li>Smartwatches</li>
+              <li>Grooming</li>
+              <li>Home Application</li>
+              <li>Suits</li>
+              <li>Dress Materials</li>
+              <li>View All</li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div class="body">
@@ -232,5 +349,22 @@
         </div>
       </div>
     </div>
+   
+
+    <script>
+      var v=0;
+      document.getElementById("b2").onclick=function(){
+        if(v==0){
+          document.getElementById("list").style.display="block";
+        v=1;}
+        else{
+          document.getElementById("list").style.display="none";
+         v=0;
+        }
+          document.getElementById("list").style.width="50%";
+          
+          document.getElementById("search").style.width="80%"
+      }
+    </script>
   </body>
 </html>
